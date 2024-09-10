@@ -8,5 +8,48 @@ TextInput,
 TouchableOpacity
 
 } from 'react-natuve';
+export default class logo extends Component <{}> {
+render(){
+return(
 
-  
+<view style = {style.container}>
+
+   <Textinput style = {style.inputBox}
+   underlineColorAndroid = 'rgba(0,0,0,0)'
+   placeholder = "Email"
+   placeholderTextColor = "#ffffff" 
+   selectioncolor = "#fff"
+   keyboardType = "email-addrest
+   onSubmitEditting = { ()=> this.password.focus()}  
+/>
+   <Textinout style = {style.inputBox}
+   underlineColorAndroid = 'rgba(0,0,0,0)'
+   placeholder = "password"
+   secureTextEntry = {true}
+   placeholderTextColor = "3ffffff"
+   ref={(input) => this.password = input }
+/>
+
+   <TouchableOpacity style = {style.button}>
+   <Text style = {style.buttonText} > {this.prpos.type}</Text>
+   </TouchableOpacity>
+
+</View>  
+)
+}
+}
+   cons style = StyleSheet.create({
+   container : {
+   flexgrow : 1, justifyContent : 'centrr', alignItem : 'center'
+},
+inputBox :{
+
+  widht : 300,backgroundColor : 'rgba(255,255,0.2)', borderRadius : 25, paddingHorizontal : 16, color : '#fffff' , marginVertical : 10
+button : {
+  widht : 300, backgroundColor : '#1c313a',borderRadius : 25, marginVertical : 10, panddingvertical :13
+}.
+buttonText : {
+
+  FontSize :10, fintWeight : '500', color : '#ffffff',textAlign : 'Center'
+}
+});
